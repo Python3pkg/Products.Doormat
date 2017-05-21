@@ -7,7 +7,7 @@ from Products.CMFDynamicViewFTI.browserdefault import BrowserDefaultMixin
 from Products.Doormat.config import PROJECTNAME
 from Products.Doormat import DoormatMF as _
 
-import interfaces
+from . import interfaces
 
 try:
     from archetypes.referencebrowserwidget import ReferenceBrowserWidget
@@ -22,7 +22,7 @@ schema = atapi.Schema((
     atapi.ReferenceField(
         name='internal_link',
         widget=ReferenceBrowserWidget(
-            label=_(u'Internal_link'),
+            label=_('Internal_link'),
             label_msgid='Doormat_label_internal_link',
             i18n_domain='Doormat',
         ),

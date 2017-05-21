@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
-import Doormat
-import DoormatColumn
-import DoormatSection
-import DoormatReference
-import DoormatMixin
-import DoormatCollection
+from . import Doormat
+from . import DoormatColumn
+from . import DoormatSection
+from . import DoormatReference
+from . import DoormatMixin
+from . import DoormatCollection
 
 # pyflakes
 Doormat

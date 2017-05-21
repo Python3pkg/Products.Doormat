@@ -7,7 +7,7 @@ from Products.Doormat.content.DoormatMixin import DoormatMixin
 from Products.Doormat.config import PROJECTNAME
 from zope.interface import implements
 
-import interfaces
+from . import interfaces
 
 schema = Schema((
 

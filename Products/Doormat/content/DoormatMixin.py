@@ -13,8 +13,8 @@ schema = atapi.Schema((
         name='showTitle',
         default="True",
         widget=atapi.BooleanField._properties['widget'](
-            label=_(u"Show title in viewlet"),
-            description=_(u"If checked, this Doormat / Column / Section's title "
+            label=_("Show title in viewlet"),
+            description=_("If checked, this Doormat / Column / Section's title "
                         "will be displayed in the doormat viewlet."),
             label_msgid='Doormat_label_showTitle',
             description_msgid='Doormat_help_showTitle',

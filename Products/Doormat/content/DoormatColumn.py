@@ -2,7 +2,7 @@
 from AccessControl import ClassSecurityInfo
 from Products.Archetypes import atapi
 from zope.interface import implements
-import interfaces
+from . import interfaces
 from Products.Doormat.content.DoormatMixin import DoormatMixin
 
 from Products.ATContentTypes.content.folder import ATFolder

@@ -232,7 +232,7 @@ class DoormatViewlet(ViewletBase):
         context = aq_inner(self.context)
         cat = getToolByName(context, 'portal_catalog')
         portal_state = getMultiAdapter((self.context, self.request),
-                                       name=u'plone_portal_state')
+                                       name='plone_portal_state')
         navigation_root_path = portal_state.navigation_root_path()
         # First try to find a doormat within the navigation root.
         doormats = cat(portal_type='Doormat', path=navigation_root_path,

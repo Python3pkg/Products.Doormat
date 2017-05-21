@@ -86,12 +86,12 @@ class DoormatViewTest(unittest.TestCase):
         section_obj = section[0].getObject()
 
         # ${portal_url}
-        link_title_portal_url = u'Link Portal Url'
+        link_title_portal_url = 'Link Portal Url'
         link_id_portal_url = normalizer.normalize(link_title_portal_url)
-        link_url_portal_url = u'/plone/{0}'.format(link_id_portal_url)
-        remote_url_portal_url = u'${{portal_url}}/{0}'.format(link_id_portal_url)
+        link_url_portal_url = '/plone/{0}'.format(link_id_portal_url)
+        remote_url_portal_url = '${{portal_url}}/{0}'.format(link_id_portal_url)
         section_obj.invokeFactory(
-            u'Link',
+            'Link',
             link_id_portal_url,
             title=link_title_portal_url,
             remoteUrl=remote_url_portal_url,
@@ -99,18 +99,18 @@ class DoormatViewTest(unittest.TestCase):
         #
 
         # ${navigation_root_url}
-        link_title_navigation_root_url = u'Link Navigation Root Url'
+        link_title_navigation_root_url = 'Link Navigation Root Url'
         link_id_navigation_root_url = normalizer.normalize(
             link_title_navigation_root_url
         )
-        link_url_navigation_root_url = u'/plone/{0}'.format(
+        link_url_navigation_root_url = '/plone/{0}'.format(
             link_id_navigation_root_url
         )
-        remote_url_navigation_root_url = u'${{navigation_root_url}}/{0}'.format(
+        remote_url_navigation_root_url = '${{navigation_root_url}}/{0}'.format(
             link_id_navigation_root_url
         )
         section_obj.invokeFactory(
-            u'Link',
+            'Link',
             link_id_navigation_root_url,
             title=link_title_navigation_root_url,
             remoteUrl=remote_url_navigation_root_url,
